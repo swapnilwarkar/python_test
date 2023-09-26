@@ -15,10 +15,10 @@ Update the conda
 3. ! pip install tsaug
 
 (base) C:\WINDOWS\system32>python
-Python 3.8.5 
-1. import librosa
-2. librosa.__version__
-3. '0.9.2'
+1. Python 3.8.5 
+2. import librosa
+3. librosa.__version__
+4. '0.9.2'
 
 # References : 
 1. https://github.com/audeering/opensmile/releases/tag/v3.0.0;
