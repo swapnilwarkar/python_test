@@ -1,20 +1,5 @@
 # Object Oriented Programming in Python
 
-01. [Classes](https://github.com/arvimal/Python-and-OOP#01-classes)
-02. [Instances, Instance methods, Instance attributes](https://github.com/arvimal/Python-and-OOP#02-instances-instance-methods-instance-attributes)
-03. [Class attributes](https://github.com/arvimal/Python-and-OOP#03-class-attributes)
-04. [The __init__ constructor](https://github.com/arvimal/Python-and-OOP#04-the-init-constructor)
-05. [Inheritance (Inheriting {attributes,methods,constructors etc..})](https://github.com/arvimal/Python-and-OOP#05-inheritance-inheriting-attributesmethodsconstructors-etc)
-06. [Encapsulation](https://github.com/arvimal/Python-and-OOP#06-encapsulation)
-07. [Polymorphism](https://github.com/arvimal/Python-and-OOP#07-polymorphism)
-08. [Instance methods](https://github.com/arvimal/Python-and-OOP#08-instance-methods)
-09. [Multiple Inheritance and method/attribute lookup](https://github.com/arvimal/Python-and-OOP#10-multiple-inheritance-and-how-lookup-works)
-10. [Method Resolution Order (MRO)](https://github.com/arvimal/Python-and-OOP#11-method-resolution-order-mro)
-11. [Decorators](https://github.com/arvimal/Python-and-OOP#12-decorators)
-12. [Static methods](https://github.com/arvimal/Python-and-OOP#13-static-methods)
-13. [Class methods](https://github.com/arvimal/Python-and-OOP#14-class-methods)
-
-
 # NOTES
 ------------
 #### 01. Classes
