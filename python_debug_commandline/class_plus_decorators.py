@@ -2,6 +2,9 @@
 # 03-encapsulation-3.py
 
 import struct
+import time
+import logging
+
 
 class myclass(object):
     def __init__(self, filename):
@@ -13,6 +16,28 @@ class myclass(object):
     def set_filename(self, filename):
         self.filename = filename
 
+    def timeit(func):
+        def wrapper(*args, **kwargs):
+            start_time = time.time()
+            result = func(*args, **kwargs)
+            end_time = time.time()
+            print(f"Function {func.__name__} took {end_time - start_time} seconds to execute.")
+            return result
+
+        return wrapper
+
+    def log_function(func):
+        def wrapper(*args, **kwargs):
+            logger = logging.getLogger(func.__name__)
+            logger.info("Entering function %s", func.__name__)
+            result = func(*args, **kwargs)
+            logger.info("Exiting function %s", func.__name__)
+            return result
+
+        return wrapper
+
+    @timeit
+    @log_function
     def parse_wav_method(self, printOut=None):
         filename = self.filename
         # Open the example wave file stored in the current directory.

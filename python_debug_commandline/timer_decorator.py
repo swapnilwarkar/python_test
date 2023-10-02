@@ -1,20 +1,37 @@
-#!/usr/bin/env python
-# 03-encapsulation-3.py
+#!/usr/bin/python3
+# http://soundfile.sapp.org/doc/WaveFormat/
+# define WAVE_FORMAT_PCM 1
+# define WAVE_FORMAT_IEEE_FLOAT 3
 
 import struct
+import time
+import logging
 
-class myclass(object):
-    def __init__(self, filename):
-        self.filename = filename
+def timeit(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        print(f"Function {func.__name__} took {end_time - start_time} seconds to execute.")
+        return result
+    return wrapper
 
-    def get_filename(self):
-        return print(self.filename)
+def log_function(func):
+    def wrapper(*args, **kwargs):
+        logger = logging.getLogger(func.__name__)
+        logger.info("Entering function %s", func.__name__)
+        result = func(*args, **kwargs)
+        logger.info("Exiting function %s", func.__name__)
+        return result
+    return wrapper
 
-    def set_filename(self, filename):
-        self.filename = filename
+#@timeit
+#def my_function(x):
+    #return x * 2
 
-    def parse_wav_method(self, printOut=None):
-        filename = self.filename
+@timeit
+@log_function
+def parse_wav_file(filename, printOut=None):
         # Open the example wave file stored in the current directory.
         with open(filename, 'rb') as wav_file:
             # Main Header
@@ -138,3 +155,6 @@ class myclass(object):
                 second_sample=samples[1],
                 onethousand_sample=samples[10000],
                 length_in_seconds=length_in_seconds))
+
+
+
