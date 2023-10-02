@@ -5,6 +5,7 @@
 
 import struct
 import time
+import logging
 
 def timeit(func):
     def wrapper(*args, **kwargs):
@@ -15,11 +16,21 @@ def timeit(func):
         return result
     return wrapper
 
+def log_function(func):
+    def wrapper(*args, **kwargs):
+        logger = logging.getLogger(func.__name__)
+        logger.info("Entering function %s", func.__name__)
+        result = func(*args, **kwargs)
+        logger.info("Exiting function %s", func.__name__)
+        return result
+    return wrapper
+
 #@timeit
 #def my_function(x):
     #return x * 2
 
 @timeit
+@log_function
 def parse_wav_file(filename, printOut=None):
         # Open the example wave file stored in the current directory.
         with open(filename, 'rb') as wav_file:
