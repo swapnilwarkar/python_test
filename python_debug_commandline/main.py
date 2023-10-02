@@ -6,6 +6,7 @@ import os
 import parse_wav
 import class_ops
 import timer_decorator
+import class_plus_decorators
 
 #log = logging.getLogger()
 #log.setLevel(logging.DEBUG)
@@ -37,10 +38,20 @@ if __name__ == '__main__':
         '\nInput file1: {}\nInput file2: {}\nOutput_directory: {}\n'
           .format(input_file1, input_file2, output_directory))
 
+    #Default/Normal method calling from another .py file
     #parse_wav.parse_wav_file(input_file1)
-    timer_decorator.parse_wav_file(input_file1)
 
+    # Decorator method calling from another .py file
+    #timer_decorator.parse_wav_file(input_file1)
+
+    # Use of class and object for calling the Default/Normal method calling from another .py file
     #myclass_object = class_ops.myclass(input_file1)
     #myclass_object.set_filename(input_file1)
     #myclass_object.get_filename()
     #myclass_object.parse_wav_method()
+
+    # Use of class and object for calling the decorator method calling from another .py file
+    myclass_object = class_plus_decorators.myclass(input_file1)
+    myclass_object.set_filename(input_file1)
+    myclass_object.get_filename()
+    myclass_object.parse_wav_method()
