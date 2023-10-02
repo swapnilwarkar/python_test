@@ -5,6 +5,7 @@ import os
 
 import parse_wav
 import class_ops
+import timer_decorator
 
 #log = logging.getLogger()
 #log.setLevel(logging.DEBUG)
@@ -37,9 +38,9 @@ if __name__ == '__main__':
           .format(input_file1, input_file2, output_directory))
 
     #parse_wav.parse_wav_file(input_file1)
+    timer_decorator.parse_wav_file(input_file1)
 
-    myclass_object = class_ops.myclass(input_file1)
-    myclass_object.set_filename(input_file1)
-    myclass_object.get_filename()
-
-    myclass_object.parse_wav_method()
+    #myclass_object = class_ops.myclass(input_file1)
+    #myclass_object.set_filename(input_file1)
+    #myclass_object.get_filename()
+    #myclass_object.parse_wav_method()
