@@ -27,7 +27,7 @@ apt install docker-compose
 curl -SL https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker compose version
-Expexted version:
-Docker Compose version v2.23.3
+#Expexted version:
+#Docker Compose version v2.23.3
 echo "Expexted version: v2.23.3"
 
