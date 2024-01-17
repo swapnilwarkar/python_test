@@ -1,6 +1,9 @@
 #!/bin/bash
+# Author : Swapnil Warkar. 
+# Date : 16/01/2024. 
+# Create hello-world docker container. 
 
-apt-get update && apt install -y tshark && apt install -y net-tools && apt install unzip -y
+apt-get update 
 
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
@@ -19,15 +22,13 @@ echo \
 sudo apt-get update -y
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+echo "Run hello-world docker container"
 sudo docker run hello-world
 
-
-echo "Installing docker compose"
+echo "Install docker compose"
 apt install docker-compose
 curl -SL https://github.com/docker/compose/releases/download/v2.23.3/docker-compose-linux-x86_64 -o /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker compose version
-#Expexted version:
-#Docker Compose version v2.23.3
-echo "Expexted version: v2.23.3"
 
