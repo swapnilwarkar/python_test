@@ -1,0 +1,9 @@
+python.exe -m pip install --upgrade pip
+
+pip install bluesteinfft
+
+sudo apt-get install python3-pip
+pip3 --version
+pip3 install pandas --user
+pip3 install numpy  --user
+pip3 show pandas

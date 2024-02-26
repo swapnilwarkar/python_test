@@ -1,4 +1,9 @@
 git clone https://github.com/swapnilwarkar/python_test
+git branch
+git branch -r
+git switch oct_release
+git pull origin oct_release
+
 git add .
 git status 
 git commit -m "added directory"
@@ -16,6 +21,7 @@ $ git checkout
 $ git pull
 
 $ git branch
+$ git branch -r
 $ git log -n2
 $ git reset HEAD
 $ git pull origin master
