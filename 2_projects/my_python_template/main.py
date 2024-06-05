@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # main.py
 
-# main.py
+"""This module contains the main functionality for the project."""
 
 from data import fruits, customer_data
 
@@ -32,6 +32,9 @@ if __name__ == "__main__":
     print_fruits()
     access_customer_data()
 
-    # Create a product instance
-    product1 = Product("T-Shirt", 19.99)
-    print(product1.get_info())
+    # Use uppercase for constant variable names
+    PRODUCT_NAME = "T-Shirt"
+    PRODUCT_PRICE = 19.99
+
+    PROD1 = Product(PRODUCT_NAME, PRODUCT_PRICE)
+    print(PROD1.get_info())
