@@ -1,5 +1,7 @@
 import sys
 
+import pylint
+
 pylint_config = pylint.RcFile()
 
 # Add additional pylint configuration options
