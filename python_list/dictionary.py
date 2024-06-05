@@ -1,4 +1,6 @@
-#!/usr/bin/python3.6
+# !/usr/bin/python3.6
+# cd /mnt/c/swap_wsl/swapnil_repo/python_test ; 
+# /usr/bin/env /bin/python3 /home/swap/.vscode-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 39195 -- /mnt/c/swap_wsl/swapnil_repo/python_test/python_list/dictionary.py  
 
 if __name__ == '__main__':
     # Create a dictionary
