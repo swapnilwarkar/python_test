@@ -11,3 +11,5 @@ We can do the analysis for single file as well:
 1. pylint my_python_template/main.py
 2. pylint my_python_template/data.py
 
+Run the python file from vscode commandline terminal
+python3 main.py

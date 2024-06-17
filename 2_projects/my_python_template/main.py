@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# main.py
+# python3 main.py
 
 """This module contains the main functionality for the project."""
 
@@ -33,7 +33,7 @@ if __name__ == "__main__":
     access_customer_data()
 
     # Use uppercase for constant variable names
-    PRODUCT_NAME = "T-Shirt"
+    PRODUCT_NAME  = "T-Shirt"
     PRODUCT_PRICE = 19.99
 
     PROD1 = Product(PRODUCT_NAME, PRODUCT_PRICE)

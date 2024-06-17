@@ -6,7 +6,7 @@
 fruits = ["apple", "banana", "orange"]  # List of fruits
 
 customer_data = {
-    "name": "John Doe",
-    "email": "johndoe@example.com",
+    "name": "Swapnil Warkar",
+    "email": "swapnilwarkar@example.com",
     "phone": "+1234567890"
 }  # Dictionary containing customer information

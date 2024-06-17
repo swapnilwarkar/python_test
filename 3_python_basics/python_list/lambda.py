@@ -1,4 +1,5 @@
 #!/usr/bin/python3.6
+# python3 lambda.py
 
 if __name__ == '__main__':
     # Create a list of numbers
