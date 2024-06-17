@@ -1,7 +1,7 @@
 git branch
 git status 
 git add . 
-git commit -m "checkin the features - main branch checkin pending since long on 17th May 2024" 
+git commit -m "checkin the features - main branch checkin for updated documents" 
 #git push origin oct_release
 git push origin main
 git status
